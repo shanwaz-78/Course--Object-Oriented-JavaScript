@@ -1,3 +1,4 @@
+// function declaration represents class declaration.
 function user_details(name, score) {
   this.name = name;
   this.score = score;
@@ -12,7 +13,7 @@ function admin(...args) {
   user_details.apply(this,args);
 }
 
-// we inherited the user_details object's prototypes method.
+// Prototyple inheritence.
 admin.prototype = Object.create(user_details.prototype);
 
 
